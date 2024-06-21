@@ -1,7 +1,7 @@
 {
   "name": "sudoku-app",
   "version": "0.1.0",
-  "homepage": "https://githubusername.github.io/repository-name",
+  "homepage": "https://kvineeth89.github.io/Sudoku",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

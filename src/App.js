@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Grid from './components/Grid';
-import { generateSudokuWithDifficulty, solveSudoku, isValidSudoku } from './utils/sudokuUtils';
+import { generateSudokuWithDifficulty, solveSudoku } from './utils/sudokuUtils';
 import './App.css';
 
 function App() {
@@ -31,7 +31,8 @@ function App() {
   };
 
   const handleSolve = () => {
-    if (isValidSudoku(grid)) {
+    const solvedGrid = [...grid.map(row => [...row])];
+    if (solveSudoku(solvedGrid)) {
       setMessage('Your solution is correct so far!');
     } else {
       setMessage('Your solution contains errors. Please check and try again.');
@@ -47,7 +48,8 @@ function App() {
   };
 
   const handleStartSolving = () => {
-    if (isValidSudoku(grid)) {
+    const solvedGrid = [...grid.map(row => [...row])];
+    if (solveSudoku(solvedGrid)) {
       setInitialGrid(grid.map(row => row.map(cell => cell !== 0)));
       setIsCreatingPuzzle(false);
       setMessage('Custom puzzle accepted. Start solving!');
