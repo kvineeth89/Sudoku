@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/repository-name/static/css/main.4c216770.css",
-    "main.js": "/repository-name/static/js/main.6ee6b76c.js",
-    "index.html": "/repository-name/index.html",
-    "main.4c216770.css.map": "/repository-name/static/css/main.4c216770.css.map",
-    "main.6ee6b76c.js.map": "/repository-name/static/js/main.6ee6b76c.js.map"
+    "main.css": "/Sudoku/static/css/main.4c216770.css",
+    "main.js": "/Sudoku/static/js/main.6ee6b76c.js",
+    "index.html": "/Sudoku/index.html",
+    "main.4c216770.css.map": "/Sudoku/static/css/main.4c216770.css.map",
+    "main.6ee6b76c.js.map": "/Sudoku/static/js/main.6ee6b76c.js.map"
   },
   "entrypoints": [
     "static/css/main.4c216770.css",
