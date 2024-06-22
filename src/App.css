@@ -88,23 +88,43 @@ button:active {
   box-shadow: none;
 }
 
-button:nth-child(1) {
+.controls > button:not(.difficulty-buttons button) {
   background-color: #4CAF50;
   color: white;
 }
 
-button:nth-child(2) {
-  background-color: #2196F3;
+.difficulty-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.difficulty-buttons button {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.difficulty-buttons button:nth-child(1) {
+  background-color: #4CAF50;
   color: white;
 }
 
-button:nth-child(3) {
+.difficulty-buttons button:nth-child(2) {
   background-color: #FFC107;
   color: black;
 }
 
-button:nth-child(4) {
-  background-color: #9C27B0;
+.difficulty-buttons button:nth-child(3) {
+  background-color: #FF9800;
+  color: white;
+}
+
+.difficulty-buttons button:nth-child(4) {
+  background-color: #F44336;
+  color: white;
+}
+
+.controls > button:last-child {
+  background-color: #FF5722;
   color: white;
 }
 
@@ -126,16 +146,6 @@ button:nth-child(4) {
   border-radius: 5px;
   color: white;
   font-weight: bold;
-}
-
-.difficulty-buttons {
-  display: flex;
-  gap: 5px;
-}
-
-.difficulty-buttons button {
-  padding: 5px 10px;
-  font-size: 14px;
 }
 
 .copy-message {
